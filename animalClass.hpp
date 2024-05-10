@@ -2,13 +2,15 @@
 #define __ANIMALCLASS__
 
 class Animal {
-    
-    public:
+public:
     Animal();
     virtual ~Animal();
+    Animal(const Animal& obj);
 
     virtual void voice() = 0;
-
+    static int getCount();
+private:
+    static int count;
 };
 
 

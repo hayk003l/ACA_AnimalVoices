@@ -38,5 +38,7 @@ int main() {
     delete zooObj;
     zooObj = nullptr;
 
+    std::cout << "Count of made Animal objects - " << bearObj->getCount() << std::endl;
+
     return 0;
 }
