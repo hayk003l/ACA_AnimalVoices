@@ -5,6 +5,7 @@
 class Cat : public Animal {
     public:
     Cat();
+    Cat(const int& age, const int& weight);
     ~Cat();
 
     void voice() override;

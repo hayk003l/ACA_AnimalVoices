@@ -5,6 +5,7 @@
 class Dolphin : public Animal {
     public:
     Dolphin();
+    Dolphin(const int& age, const int& weight);
     ~Dolphin();
 
     void voice() override;

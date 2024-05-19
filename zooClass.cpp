@@ -20,13 +20,6 @@ Zoo::~Zoo() {
     _animalObj = nullptr;
 }
 
-Zoo& Zoo::getInstance() {
-    if (_instance == nullptr) {
-        _instance = new Zoo();
-    }
-    return *_instance;
-}
-
 bool Zoo::registerAnimal(Animal* newAnimal) {
     bool result = false;
     if (_count <= _size) {

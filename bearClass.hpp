@@ -5,6 +5,8 @@
 class Bear : public Animal {
     public:
     Bear();
+    Bear(const int& age, const int& weight);
+    
     ~Bear();
 
     void voice() override;
