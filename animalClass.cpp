@@ -54,11 +54,7 @@ int Animal::getCount() {
 }
 
 bool Animal::operator<(const Animal& obj) {
-    bool result = false;
-    if(this->_age < obj._age) {
-        result = true;
-    }
-    return result;
+    return this->_age < obj._age;
 }
 
 bool Animal::operator>(const Animal& obj) {
@@ -66,11 +62,7 @@ bool Animal::operator>(const Animal& obj) {
 }
 
 bool Animal::operator==(const Animal& obj) {
-    bool result = false;
-    if(this->_age == obj._age) {
-        result = true;
-    }
-    return result;
+    return this->_age == obj._age;
 }
 
 int Animal::getAge() const {
